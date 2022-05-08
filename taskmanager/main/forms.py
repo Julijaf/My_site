@@ -1,20 +1,9 @@
 from django.forms import ModelForm, TextInput, Textarea
+from django import forms
 
-from .models import Task
 
-
-class TaskForm(ModelForm):
-    class Meta:
-        model = Task
-        fields = ["title", "task"]
-        widgets = {"title": TextInput(attrs={
-            'class': 'form-control',
-            'placeholder': 'Enter the task name:'
-
-        }),
-            "task": Textarea(attrs={
-                'class': 'form-control',
-                'placeholder': 'Enter the task name:'
-
-            })
-        }
+class NameForm(forms.Form):
+    name = forms.CharField(label='Your name', max_length=100)
+    email = forms.CharField(label='Your email', max_length=100)
+    subject = forms.CharField(label='subject', max_length=100)
+    message = forms.CharField(label='message', max_length=400)

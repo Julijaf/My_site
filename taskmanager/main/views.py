@@ -3,26 +3,8 @@ from django.shortcuts import render, redirect
 from django.http import HttpResponseRedirect
 from django.shortcuts import render
 
-from .forms import NameForm
-
-
-def get_name(request):
-    # if this is a POST request we need to process the form data
-    if request.method == 'POST':
-        # create a form instance and populate it with data from the request:
-        form = NameForm(request.POST)
-        # check whether it's valid:
-        if form.is_valid():
-            # process the data in form.cleaned_data as required
-            # ...
-            # redirect to a new URL:
-            return HttpResponseRedirect('/')
-
-    # if a GET (or any other method) we'll create a blank form
-    else:
-        form = NameForm()
-
-    return render(request, 'news.html', {'form': form})
+from .forms import MessageForm
+from .models import Message
 
 
 def index(request):
@@ -42,7 +24,20 @@ def statistics(request):
 
 
 def contacts(request):
-    return render(request, 'main/contacts.html')
+    error = ""
+    if request.method == 'POST':
+        form = MessageForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('/news')
+        else:
+            error = "WASTED"
+
+
+
+    form = MessageForm()
+
+    return render(request, 'main/contacts.html', {'form': form, 'error': error})
 
 
 def services(request):
@@ -54,4 +49,5 @@ def team(request):
 
 
 def news(request):
-    return render(request, 'main/news.html')
+    news = Message.objects.all()
+    return render(request, 'main/news.html', {'news': news})

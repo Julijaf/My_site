@@ -5,7 +5,16 @@ News
 {% endblock %}
 
 {% block content %}
+{{ news }}
 <p>Какие-то новости</p>
+{% for x in news %}
+<div class="alert">
+    <h2>{{ x.name }}</h2>
+    <h3> {{ x.subject }}</h3>
+    <p> {{ x.msg}} </p>
+    <p> {{ x.email}} </p>
+</div>
+{% endfor %}
 <div class="container">
     <h1 class="text-center">Wery long post</h1>
     <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Volutpat lacus laoreet non curabitur. Ut aliquam purus sit amet luctus venenatis lectus. Felis donec et odio pellentesque. Pellentesque habitant morbi tristique senectus et netus. Egestas congue quisque egestas diam in. Nullam ac tortor vitae purus faucibus ornare suspendisse. Egestas maecenas pharetra convallis posuere morbi leo urna molestie at. Eget nunc lobortis mattis aliquam. In iaculis nunc sed augue lacus. Dui faucibus in ornare quam. Id diam vel quam elementum pulvinar etiam non quam. Eget lorem dolor sed viverra ipsum nunc aliquet. Et tortor at risus viverra. Facilisis volutpat est velit egestas dui. Viverra suspendisse potenti nullam ac tortor. Cursus mattis molestie a iaculis.

@@ -1,0 +1,199 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <title>{% block title %}{% endblock %}</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+
+
+    <!-- Favicon -->
+    <link href="https://sulmara.com/wp-content/themes/sulmara_theme/favicon.ico" rel="icon" type="image/x-icon">
+    <link href="https://sulmara.com/wp-content/themes/sulmara_theme/assets/img/favicon/apple-touch-icon.png"
+          rel="apple-touch-icon">
+    <link href="https://sulmara.com/wp-content/themes/sulmara_theme/assets/img/favicon//apple-touch-icon-72x72.png" rel="apple-touch-icon"
+          sizes="72x72">
+    <link href="https://sulmara.com/wp-content/themes/sulmara_theme/assets/img/favicon/apple-touch-icon-114x114.png" rel="apple-touch-icon"
+          sizes="114x114">
+    <link href="https://sulmara.com/wp-content/themes/sulmara_theme/assets/img/favicon/apple-icon-57x57.png" rel="apple-touch-icon"
+          sizes="57x57">
+    <link href="https://sulmara.com/wp-content/themes/sulmara_theme/assets/img/favicon/apple-icon-60x60.png" rel="apple-touch-icon"
+          sizes="60x60">
+    <link href="https://sulmara.com/wp-content/themes/sulmara_theme/assets/img/favicon/apple-icon-72x72.png" rel="apple-touch-icon"
+          sizes="72x72">
+    <link href="https://sulmara.com/wp-content/themes/sulmara_theme/assets/img/favicon/apple-icon-76x76.png" rel="apple-touch-icon"
+          sizes="76x76">
+    <link href="https://sulmara.com/wp-content/themes/sulmara_theme/assets/img/favicon/apple-icon-114x114.png" rel="apple-touch-icon"
+          sizes="114x114">
+    <link href="https://sulmara.com/wp-content/themes/sulmara_theme/assets/img/favicon/apple-icon-120x120.png" rel="apple-touch-icon"
+          sizes="120x120">
+    <link href="https://sulmara.com/wp-content/themes/sulmara_theme/assets/img/favicon/apple-icon-144x144.png" rel="apple-touch-icon"
+          sizes="144x144">
+    <link href="https://sulmara.com/wp-content/themes/sulmara_theme/assets/img/favicon/apple-icon-152x152.png" rel="apple-touch-icon"
+          sizes="152x152">
+    <link href="https://sulmara.com/wp-content/themes/sulmara_theme/assets/img/favicon/apple-icon-180x180.png" rel="apple-touch-icon"
+          sizes="180x180">
+    <link href="https://sulmara.com/wp-content/themes/sulmara_theme/assets/img/favicon/android-icon-192x192.png" rel="icon" sizes="192x192"
+          type="image/png">
+    <link href="https://sulmara.com/wp-content/themes/sulmara_theme/assets/img/favicon/favicon-32x32.png" rel="icon" sizes="32x32"
+          type="image/png">
+    <link href="https://sulmara.com/wp-content/themes/sulmara_theme/assets/img/favicon/favicon-96x96.png" rel="icon" sizes="96x96"
+          type="image/png">
+    <link href="https://sulmara.com/wp-content/themes/sulmara_theme/assets/img/favicon/favicon-16x16.png" rel="icon" sizes="16x16"
+          type="image/png">
+
+    <!-- CSS styles -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://use.typekit.net/cql8xvj.css" rel="stylesheet">
+    <link href="https://unpkg.com/animsition@4.0.2/dist/css/animsition.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/swiper@6.5.4/swiper-bundle.min.css" rel="stylesheet">
+    <link href="https://sulmara.com/wp-content/themes/sulmara_theme/style.css" rel="stylesheet">
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+</head>
+<body>
+
+
+<div class="animsition" style="animation-duration: 800ms; opacity: 1;">
+
+    <div class="site-menu-mask"></div>
+    <div class="site-menu">
+        <button class="site-menu-close">
+            <svg height="33.941" viewBox="0 0 33.941 33.941" width="33.941" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9000,627V616h-11v-2h11V603h2v11h11v2h-11v11Z"
+                      fill="#fff" transform="translate(-6782.568 5946.769) rotate(-45)"></path>
+            </svg>
+        </button>
+        <nav class="site-menu-nav slinky-menu slinky-theme-default" style="transition-duration: 300ms; height: 0px;">
+
+            <ul class="menu" id="primary-responsive" style="transition-duration: 300ms;">
+                <li class="d-block d-lg-none menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-7 current_page_item menu-item-397 is-active"
+                    id="menu-item-397">
+                    <a href="https://sulmara.com/" title="Home"><span>Home</span></a></li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-48" id="menu-item-48"><a
+                        href="https://sulmara.com/services/" title="Services"><span>Services</span></a></li>
+                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-56"
+                    id="menu-item-56">
+                    <a class="next" href="#" title="About"><span>About</span></a>
+                    <ul role="menu">
+                        <li class="header"><a class="back" href="#"></a></li>
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-49"
+                            id="menu-item-49"><a
+                                class="dropdown-item" href="{% url 'about' %}"
+                                title="About Us"><span>About Us</span></a></li>
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-52"
+                            id="menu-item-52"><a
+                                class="dropdown-item" href="https://sulmara.com/about/meet-the-team/"
+                                title="Meet the team"><span>Meet the team</span></a></li>
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-50"
+                            id="menu-item-50"><a
+                                class="dropdown-item" href="https://sulmara.com/about/news/"
+                                title="News"><span>News</span></a></li>
+
+                    </ul>
+                </li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-54" id="menu-item-54"><a
+                        href="{% url 'contacts' %}" title="Contact"><span>Contact</span></a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <header class="site-header px-container">
+        <nav>
+            <a class="site-header-logo" href="/">
+                <img src="https://www.svgrepo.com/show/416521/animal-carnivore-cartoon-2.svg">
+            </a>
+
+            <ul class="" id="menu-primary-menu">
+                <li class="d-block d-lg-none menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-7 current_page_item menu-item-397 active">
+                    <a href="{% url 'home' %}" title="Home">Home</a></li>
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-48"><a href="{% url 'services' %}"
+                                                                                                     title="Services">Services</a>
+                </li>
+                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-56 dropdown">
+                    <a aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" data-toggle="dropdown" href="#"
+                       role="button" title="About">About</a>
+                    <ul class=" dropdown-menu" role="menu">
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-49"><a
+                                class="dropdown-item" href="{% url 'about' %}" title="About Us">About Us</a>
+                        </li>
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-52"><a
+                                class="dropdown-item" href="{% url 'team' %}"
+                                title="Meet the team">Meet the team</a></li>
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-50"><a
+                                class="dropdown-item" href="{% url 'news' %}" title="News">News</a></li>
+                    </ul>
+                </li>
+
+                <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-54"><a href="{% url 'contacts' %}"
+                                                                                                     title="Contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <button class="site-menu-trigger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+
+</div>
+</div>
+<div class="bg">
+    <div class="image"
+         style="background-image:url('https://sulmara.com/wp-content/uploads/2021/07/Geo-Services.jpg');"></div>
+</div>
+</a>
+</li>
+<li>
+    <a class="services-cards-item" href="{% url 'home' %}">
+        <div class="main">
+            <div class="main-top">
+                <div class="icon">
+                    <img src="https://sulmara.com/wp-content/uploads/2021/05/sulmara-subsea.svg">
+                </div>
+                <h2 class="heading"><span class="light">Samara</span>Kekers</h2>
+            </div>
+            <div class="main-bottom">
+                <div class="excerpt"><p>Roses are red, violets are blue,<br>
+                There is no one to blame, my site as a poo</p>
+                </div>
+            </div>
+        </div>
+        <div class="bg">
+            <div class="image"
+                 style="background-image:url('https://sulmara.com/wp-content/uploads/2021/05/Subsea-1.jpg');"></div>
+        </div>
+    </a>
+</li>
+
+</ul>
+</div>
+</div>
+</div>
+
+
+
+<script src="https://unpkg.com/jquery@3.6.0/dist/jquery.min.js"></script>
+<script src="https://unpkg.com/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+<script src="https://unpkg.com/splitting@1.0.6/dist/splitting.min.js"></script>
+<script src="https://unpkg.com/gsap@3.6.1/dist/gsap.min.js"></script>
+<script src="https://unpkg.com/animsition@4.0.2/dist/js/animsition.min.js"></script>
+<script src="https://unpkg.com/jquery-slinky@4.2.1/dist/slinky.min.js"></script>
+<script src="https://unpkg.com/swiper@6.5.4/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/mixitup@3.3.1/dist/mixitup.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.0/dist/jquery.validate.min.js"></script>
+<script src="https://sulmara.com/wp-content/themes/sulmara_theme/assets/js/starter.js" type="module"></script>
+
+{% block content%}{% endblock %}
+</body>
+</html>

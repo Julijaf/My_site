@@ -5,12 +5,11 @@ News
 {% endblock %}
 
 {% block content %}
-{{ news }}
 <p>Какие-то новости</p>
 {% for x in news %}
-<div class="alert">
+<div class="alert alert-danger">
     <h2>{{ x.name }}</h2>
-    <h3> {{ x.subject }}</h3>
+    <h5> {{ x.subject }}</h5>
     <p> {{ x.msg}} </p>
     <p> {{ x.email}} </p>
 </div>

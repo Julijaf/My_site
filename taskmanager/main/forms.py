@@ -10,4 +10,4 @@ class MessageForm(ModelForm):
     name = forms.CharField(label='Your name', max_length=100)
     email = forms.CharField(label='Your email', max_length=100)
     subject = forms.CharField(label='subject', max_length=100)
-    message = forms.CharField(label='message', max_length=400)
+    # message = forms.CharField(label='Message', max_length=400)
